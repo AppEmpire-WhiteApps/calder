@@ -1,6 +1,7 @@
 import 'package:clarity_flutter/clarity_flutter.dart';
 import 'package:flutter/material.dart';
 
+import 'advertising/vpn_ads.dart';
 import 'app.dart';
 
 void _trackAppLaunch() {
@@ -17,7 +18,7 @@ void main() {
   runApp(
     ClarityWidget(
       clarityConfig: ClarityConfig(projectId: 'ycmf5ycy7v'),
-      app: const CalderApp(),
+      app: const VpnAds(child: CalderApp()),
     ),
   );
 }

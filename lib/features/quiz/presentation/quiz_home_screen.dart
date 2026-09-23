@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
+import '../../../advertising/vpn_banner_scheduler.dart';
+import '../../../advertising/vpn_promo_button.dart';
 import '../../../core/settings/training_desk_support.dart';
 import '../../../core/theme/calder_theme.dart';
 import '../application/operator_progress_cubit.dart';
@@ -157,6 +159,9 @@ class _Dashboard extends StatelessWidget {
         style: TextStyle(color: CalderTheme.muted, fontSize: 16),
       ),
       const SizedBox(height: 28),
+      const VpnBannerScheduler(
+        child: VpnPromoButton(margin: EdgeInsets.only(bottom: 20)),
+      ),
       Container(
         padding: const EdgeInsets.all(20),
         decoration: BoxDecoration(
@@ -517,6 +522,7 @@ class _OperatorSettings extends StatelessWidget {
         style: TextStyle(color: CalderTheme.muted),
       ),
       const SizedBox(height: 24),
+      const VpnPromoButton(margin: EdgeInsets.only(bottom: 20)),
       FutureBuilder<String>(
         future: TrainingDeskSupport.version(),
         builder: (_, snapshot) => ListTile(
@@ -545,7 +551,7 @@ class _OperatorSettings extends StatelessWidget {
         child: Padding(
           padding: EdgeInsets.all(18),
           child: Text(
-            'Calder is an educational quiz. It does not perform scans, access production systems, or replace your incident response runbook.',
+            'Calder is an educational quiz. It does not perform scans, access production systems, or replace your incident response runbook. Ads load configuration from GitHub and open external websites when tapped.',
             style: TextStyle(color: CalderTheme.muted, height: 1.4),
           ),
         ),
