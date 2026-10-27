@@ -136,7 +136,7 @@ class _Dashboard extends StatelessWidget {
     padding: const EdgeInsets.all(22),
     children: [
       const Text(
-        'CALDER',
+        'Calder: Cyber Defense',
         style: TextStyle(
           color: CalderTheme.cyan,
           fontSize: 16,
@@ -542,7 +542,7 @@ class _OperatorSettings extends StatelessWidget {
       ),
       ListTile(
         leading: const Icon(Icons.star_border_rounded, color: CalderTheme.cyan),
-        title: const Text('Rate Calder'),
+        title: const Text('Rate Calder: Cyber Defense'),
         subtitle: const Text('Leave a review in the App Store'),
         onTap: () => TrainingDeskSupport.rate(),
       ),

@@ -11,7 +11,7 @@ class CalderApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) => MaterialApp(
     debugShowCheckedModeBanner: false,
-    title: 'Calder',
+    title: 'Calder: Cyber Defense',
     theme: CalderTheme.dark(),
     home: const CalderLaunchGate(),
   );

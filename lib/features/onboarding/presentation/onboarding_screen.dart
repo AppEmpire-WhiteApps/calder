@@ -82,7 +82,7 @@ class _CalderOnboardingScreenState extends State<CalderOnboardingScreen> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   const Text(
-                    'CALDER',
+                    'Calder: Cyber Defense',
                     style: TextStyle(
                       color: CalderTheme.cyan,
                       fontSize: 17,
